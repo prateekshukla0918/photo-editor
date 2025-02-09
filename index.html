@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditEase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EditEase</h1>
+        <input type="file" id="upload" accept="image/*">
+        <canvas id="canvas"></canvas>
+
+        <div class="controls">
+            <label>Brightness: <input type="range" id="brightness" min="0" max="200" value="100"></label>
+            <label>Contrast: <input type="range" id="contrast" min="0" max="200" value="100"></label>
+            <label>Saturation: <input type="range" id="saturation" min="0" max="200" value="100"></label>
+            <label>Grayscale: <input type="range" id="grayscale" min="0" max="100" value="0"></label>
+        </div>
+
+        <button id="download">Download Image</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
